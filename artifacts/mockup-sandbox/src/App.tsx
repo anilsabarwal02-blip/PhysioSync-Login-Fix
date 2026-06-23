@@ -128,6 +128,8 @@ function getPreviewPath(): string | null {
   return match ? match[1] : null;
 }
 
+import Dashboard from "./components/mockups/physiosync/Dashboard";
+
 function App() {
   const previewPath = getPreviewPath();
 
@@ -140,7 +142,7 @@ function App() {
     );
   }
 
-  return <Gallery />;
+  return <Dashboard />;
 }
 
 export default App;
